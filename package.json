@@ -1,0 +1,39 @@
+{
+  "name": "new-component",
+  "version": "5.0.2",
+  "description": "CLI for creating new React components",
+  "homepage": "https://github.com/Aldohc/new-component",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aldohc/new-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aldohc/new-component/issues"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "cli",
+    "component",
+    "boilerplate"
+  ],
+  "author": "Aldohc",
+  "license": "MIT",
+  "bin": {
+    "new-component": "src/index.js"
+  },
+  "dependencies": {
+    "@types/react": "^18.3.3",
+    "chalk": "4",
+    "commander": "10",
+    "prettier": "2.8.4",
+    "react": "^18.3.1"
+  },
+  "directories": {
+    "doc": "docs"
+  }
+}
