@@ -5,6 +5,7 @@
 </p>
 
 # next-component-cli
+This is package for create new component 
 <br />
 
 ## Quick Start
