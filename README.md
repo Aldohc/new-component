@@ -17,7 +17,7 @@ $ pnpm i next-component-cli
 
 This package has several options for generating files.
 
-```jsx
+```bash
 -i = {ComponentName}.tsx
 -t = {ComponentName}.types.ts
 -h = {ComponentName}.hooks.ts
