@@ -1,7 +1,5 @@
 <p align="center">
-  <img src="https://github.com/joshwcomeau/new-component/blob/main/docs/logo@2x.png?raw=true" width="285" height="285" alt="new-component logo">
-  <br>
-  <a href="https://www.npmjs.org/package/new-component"><img src="https://img.shields.io/npm/v/new-component.svg?style=flat" alt="npm"></a>
+  <img src="https://github.com/Aldohc/new-component/blob/main/docs/nextjs.png?raw=true" width="285" height="285" alt="cli-next-component logo">
 </p>
 
 # next-component-cli
