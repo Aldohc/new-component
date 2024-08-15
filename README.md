@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://github.com/Aldohc/new-component/blob/main/docs/nextjs.png?raw=true" width="285" height="285" alt="cli-next-component logo">
-</p>
-
 # next-component-cli
 This is package for create new component 
 <br />
