@@ -1,6 +1,6 @@
 {
-  "name": "new-component",
-  "version": "5.0.2",
+  "name": "cli-next-component",
+  "version": "1.0.0",
   "description": "CLI for creating new React components",
   "homepage": "https://github.com/Aldohc/new-component",
   "repository": {
@@ -35,5 +35,6 @@
   },
   "directories": {
     "doc": "docs"
-  }
+  },
+  "devDependencies": {}
 }
