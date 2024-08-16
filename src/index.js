@@ -49,6 +49,11 @@ const [componentName] = program.args;
 
 const options = program.opts();
 
+// Automatically set --all to true if none of the specific options are used
+if (!options.constants && !options.hooks && !options.types && !options.schemas && !options.index) {
+    options.all = true;
+}
+
 // Find the path to the selected template file.
 const templatePaths = {
     hooks: './templates/hooks.ts',
@@ -61,11 +66,7 @@ const templatePaths = {
 let filesToCreate = [];
 
 if (options.all) {
-    filesToCreate = Object.keys(templatePaths);
-    const index = filesToCreate.indexOf('schemas');
-    if (index > -1) {
-        filesToCreate.splice(index, 1);
-    }
+    filesToCreate = Object.keys(templatePaths).filter(key => key !== 'schemas');
 } else {
     if (options.constants) filesToCreate.push('constants');
     if (options.hooks) filesToCreate.push('hooks');
@@ -111,7 +112,7 @@ return readFilePromiseRelative(templatePath)
       // Replace placeholders with real data
 
         return template
-            .replace(/import type { MyType } from "\.\/types";/g, `import type { MyType } from "./${componentName}.types";`)
+            .replace(/import type { MyType } from '\.\/types';/g, `import type { MyType } from './${componentName}.types';`)
             .replace(/useMyHook/g, `use${componentName}`)
             .replace(/COMPONENT_NAME/g, componentName);
     })

@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react';
 
 const useMyHook = () => {
-    const [value, setValue] = useState<string>('');
+  const [value, setValue] = useState<string>('');
 
-    useEffect(() => {
-        // Logic for the hook
-    }, []);
+  useEffect(() => {
+    // Logic for the hook
+    setValue('');
+  }, []);
 
-    return {
-      value
-    };
+  return {
+    value
+  };
 };
 
 export default useMyHook;
