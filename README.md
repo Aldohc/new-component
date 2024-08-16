@@ -35,7 +35,7 @@ You can create a folder structure according to what you want to create.
 ```bash
 $ new-component NewComponent
 ```
-Your project will now have a new directory has one files index.tsx:
+Your project will now have a new directory has five files `index` , `view`, `types`, `hooks`, `constants`:
 
 ```jsx
 // `NewComponent/index.tsx`
